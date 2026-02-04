@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Katalog UMKM Desa Way Tataan</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6fb;
+      color: #1f2937;
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .nav-left img {
+      height: 40px;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .nav-title span {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+
+    .nav-right a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #1f2937;
+      font-weight: 500;
+    }
+
+    .nav-right a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .hero p {
+      margin-top: 16px;
+      font-size: 17px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.95;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: -40px auto 0;
+      padding: 36px 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .intro p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #4b5563;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px 100px;
+    }
+
+    .umkm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+    }
+
+    .umkm-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease;
+    }
+
+    .umkm-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .umkm-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-body h4 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .card-body p {
+      margin: 6px 0 14px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .btn-detail {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <img src="assets/img/logo-kkn.jpg">
+    <img src="assets/img/logo-unila.jpg">
+    <img src="assets/img/logo-waytataan.jpg">
+    <div class="nav-title">
+      Katalog UMKM<br>
+      <span>Desa Way Tataan</span>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html">Beranda</a>
+    <a href="#umkm">UMKM</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Katalog UMKM Desa Way Tataan</h1>
+  <p>Wadah informasi UMKM lokal sebagai bagian dari dokumentasi kegiatan KKN Universitas Lampung.</p>
+</section>
+
+<section class="intro">
+  <h2>Profil UMKM Desa</h2>
+  <p>
+    Halaman ini menampilkan daftar pelaku usaha mikro dan kecil di Desa Way Tataan
+    sebagai bentuk pendataan serta promosi potensi ekonomi masyarakat.
+  </p>
+</section>
+
+<section class="content" id="umkm">
+  <div class="umkm-grid">
+
+    <!-- UMKM 01 - 50 -->
+    <!-- UMKM 01 -->
+    <div class="umkm-card">
+      <img src="assets/img/umkm-01.jpg">
+      <div class="card-body">
+        <h4>Rohmah Ikan Laut</h4>
+        <p>Perdagangan</p>
+        <a href="detail-01.html" class="btn-detail">Lihat Detail</a>
+      </div>
+    </div>
+
+    <!-- UMKM 02 -->
+    <div class="umkm-card">
+      <img src="assets/img/umkm-02.jpg">
+      <div class="card-body">
+        <h4>Toko Sendal Sepatu Dua Dara</h4>
+        <p>Fashion</p>
+        <a href="detail-02.html" class="btn-detail">Lihat Detail</a>
+      </div>
+    </div>
+
+    <!-- UMKM 03 -->
+    <div class="umkm-card">
+      <img src="assets/img/umkm-03.jpg">
+      <div class="card-body">
+        <h4>Pangkas Rambut Dalika</h4>
+        <p>Pangkas Rambut</p>
+        <a href="detail-03.html" class="btn-detail">Lihat Detail</a>
+      </div>
+    </div>
+
+    <!-- UMKM 04 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-04.jpg">
+  <div class="card-body">
+    <h4>Warung Sembako Queen</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-04.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 05 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-05.jpg">
+  <div class="card-body">
+    <h4>Toko Smart</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-05.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 06 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-06.jpg">
+  <div class="card-body">
+    <h4>Mie Ayam Yoera</h4>
+    <p>Kuliner & Minuman</p>
+    <a href="detail-06.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 07 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-07.jpg">
+  <div class="card-body">
+    <h4>Toko Rio</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-07.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 08 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-08.jpg">
+  <div class="card-body">
+    <h4>Warung Zahra</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-08.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 09 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-09.jpg">
+  <div class="card-body">
+    <h4>Harnas Printing</h4>
+    <p>Percetakan</p>
+    <a href="detail-09.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 10 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-10.jpg">
+  <div class="card-body">
+    <h4>Zulfa Jus</h4>
+    <p>Warung Jus Buah</p>
+    <a href="detail-10.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 11 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-11.jpg">
+  <div class="card-body">
+    <h4>Warung Nasi Bu Mur</h4>
+    <p>Warung Nasi</p>
+    <a href="detail-11.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 12 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-12.jpg">
+  <div class="card-body">
+    <h4>PK Cinta Damai</h4>
+    <p>Kusen</p>
+    <a href="detail-12.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 13 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-13.jpg">
+  <div class="card-body">
+    <h4>Toko Indah</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-13.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 14 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-14.jpg">
+  <div class="card-body">
+    <h4>Bengkel Silae</h4>
+    <p>Bengkel</p>
+    <a href="detail-14.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 15 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-15.jpg">
+  <div class="card-body">
+    <h4>Limbong Plastik</h4>
+    <p>Toko Plastik</p>
+    <a href="detail-15.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 16 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-16.jpg">
+  <div class="card-body">
+    <h4>Mini ATM</h4>
+    <p>Jasa Perbankan</p>
+    <a href="detail-16.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 17 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-17.jpg">
+  <div class="card-body">
+    <h4>Galaxy 38 Cell</h4>
+    <p>Konter HP</p>
+    <a href="detail-17.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 18 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-18.jpg">
+  <div class="card-body">
+    <h4>Pet Shop Diana Sari</h4>
+    <p>Pet Shop</p>
+    <a href="detail-18.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 19 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-19.jpg">
+  <div class="card-body">
+    <h4>Mie Lidi Kita</h4>
+    <p>Mie Lidi</p>
+    <a href="detail-19.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 20 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-20.jpg">
+  <div class="card-body">
+    <h4>Kios Sri Rejeki</h4>
+    <p>Sembako & Alat Nelayan</p>
+    <a href="detail-20.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 21 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-21.jpg">
+  <div class="card-body">
+    <h4>Gudang Kepiting</h4>
+    <p>Perikanan</p>
+    <a href="detail-21.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 22 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-22.jpg">
+  <div class="card-body">
+    <h4>Emping Bu Eti</h4>
+    <p>Emping</p>
+    <a href="detail-22.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 23 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-23.jpg">
+  <div class="card-body">
+    <h4>Bu Hajir</h4>
+    <p>Gas LPG</p>
+    <a href="detail-23.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 24 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-24.jpg">
+  <div class="card-body">
+    <h4>Laundry Risma</h4>
+    <p>Laundry</p>
+    <a href="detail-24.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 25 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-25.jpg">
+  <div class="card-body">
+    <h4>Bu Ati</h4>
+    <p>Kue Tradisional</p>
+    <a href="detail-25.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 26 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-26.jpg">
+  <div class="card-body">
+    <h4>Warung Bu Eni</h4>
+    <p>Warung</p>
+    <a href="detail-26.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 27 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-27.jpg">
+  <div class="card-body">
+    <h4>Warung Bu Ratna</h4>
+    <p>Minuman</p>
+    <a href="detail-27.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 28 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-28.jpg">
+  <div class="card-body">
+    <h4>Emping Bu Rohanah</h4>
+    <p>Emping</p>
+    <a href="detail-28.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 29 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-29.jpg">
+  <div class="card-body">
+    <h4>Emping Bu Nur</h4>
+    <p>Emping</p>
+    <a href="detail-29.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 30 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-30.jpg">
+  <div class="card-body">
+    <h4>Rujak Bu Asih</h4>
+    <p>Rujak</p>
+    <a href="detail-30.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 31 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-31.jpg">
+  <div class="card-body">
+    <h4>Rias Mama Penti</h4>
+    <p>Tata Rias</p>
+    <a href="detail-31.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 32 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-32.jpg">
+  <div class="card-body">
+    <h4>Toko Azril</h4>
+    <p>Sembako & FC</p>
+    <a href="detail-32.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 33 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-33.jpg">
+  <div class="card-body">
+    <h4>Konter Lio</h4>
+    <p>Sembako & Transfer</p>
+    <a href="detail-33.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 34 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-34.jpg">
+  <div class="card-body">
+    <h4>Warung Kembar</h4>
+    <p>Produk Makanan</p>
+    <a href="detail-34.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 35 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-35.jpg">
+  <div class="card-body">
+    <h4>Warung Anggun Cell</h4>
+    <p>Sembako</p>
+    <a href="detail-35.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 36 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-36.jpg">
+  <div class="card-body">
+    <h4>Warung Ijah</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-36.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 37 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-37.jpg">
+  <div class="card-body">
+    <h4>Warung Rintan</h4>
+    <p>Minuman</p>
+    <a href="detail-37.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 38 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-38.jpg">
+  <div class="card-body">
+    <h4>Warung Nurul</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-38.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 39 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-39.jpg">
+  <div class="card-body">
+    <h4>Warung Moundi Cell</h4>
+    <p>Kuliner & Minuman</p>
+    <a href="detail-39.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 40 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-40.jpg">
+  <div class="card-body">
+    <h4>Warung Mus Fatimah</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-40.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 41 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-41.jpg">
+  <div class="card-body">
+    <h4>Warung Khoriah</h4>
+    <p>Warung Makanan</p>
+    <a href="detail-41.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 42 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-42.jpg">
+  <div class="card-body">
+    <h4>Warung Ibu Nur</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-42.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 43 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-43.jpg">
+  <div class="card-body">
+    <h4>Warung Luki</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-43.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 44 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-44.jpg">
+  <div class="card-body">
+    <h4>Warung Bude Yati</h4>
+    <p>Sayuran</p>
+    <a href="detail-44.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 45 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-45.jpg">
+  <div class="card-body">
+    <h4>Toko Riski</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-45.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 46 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-46.jpg">
+  <div class="card-body">
+    <h4>Toko Pakaian Toni</h4>
+    <p>Pakaian</p>
+    <a href="detail-46.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 47 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-47.jpg">
+  <div class="card-body">
+    <h4>Warung Pak Hawasi</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-47.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 48 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-48.jpg">
+  <div class="card-body">
+    <h4>Toko Nelayan Sanusi</h4>
+    <p>Alat Nelayan</p>
+    <a href="detail-48.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 49 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-49.jpg">
+  <div class="card-body">
+    <h4>Warung Ibu Sairoh</h4>
+    <p>Warung Sembako</p>
+    <a href="detail-49.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+<!-- UMKM 50 -->
+<div class="umkm-card">
+  <img src="assets/img/umkm-50.jpg">
+  <div class="card-body">
+    <h4>Fillet Ikan Lena</h4>
+    <p>Fillet Ikan</p>
+    <a href="detail-50.html" class="btn-detail">Lihat Detail</a>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<footer>
+  KKN Mahasiswa Universitas Lampung<br>
+  Desa Way Tataan · 2026
+</footer>
+
+</body>
+</html>
